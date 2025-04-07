@@ -1,0 +1,32 @@
+# Currency Exchange Service - Rublo & Kwanza
+
+Este é um serviço de troca de moeda que permite a conversão entre Rublo e Kwanza, com taxas de câmbio atualizadas. O projeto é construído com Node.js e Fastify, proporcionando um desempenho rápido e eficiente.
+
+## Sumário
+
+- [Visão Geral](#visão-geral)
+- [Instalação](#instalação)
+- [Uso](#uso)
+- [Endpoints](#endpoints)
+- [Estrutura do Projeto](#estrutura-do-projeto)
+- [Contribuição](#contribuição)
+- [Licença](#licença)
+
+## Visão Geral
+
+O Currency Exchange Service permite que os usuários conversem entre Rublo (RUB) e Kwanza (AOA). As taxas de câmbio são dinâmicas e atualizadas periodicamente para garantir que os usuários recebem a conversão mais precisa.
+
+## Instalação
+
+Para instalar e executar o projeto, siga as instruções abaixo:
+
+### Pré-requisitos
+
+- [Node.js](https://nodejs.org/) (versão 14 ou superior)
+- [npm](https://www.npmjs.com/) (gerenciador de pacotes do Node)
+
+### Passos
+
+1. Clone o repositório:
+   ```bash
+   git clonehttps://github.com/Evaristopinto16/currency-exchange-service

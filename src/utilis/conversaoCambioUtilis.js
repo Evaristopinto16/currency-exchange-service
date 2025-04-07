@@ -12,19 +12,24 @@ async function convesaoCambioUtilis(values) {
 async function parseToNumero(number){
     
     let parseNumber = ""
+    let text 
     if(number.includes("AOA") === true){
         const dataNumber = number.split("AOA")[0];
-        
+        text = "AOA"
         parseNumber = dataNumber
     }
     if(number.includes("RUB")){
+        text = "RUB"
 
         const dataNumber = number.split("RUB")[0]
         parseNumber = dataNumber 
 
     }
     parseNumber = await parseNumber.trim().replace(/\s+/g, '');
-    return parseNumber
+    return {
+        parseNumber,
+        coint: text
+    }
 }
 
 
@@ -32,16 +37,16 @@ async function taxaInformal(values) {
 
     let valueParse = await parseToNumero(values)  
 
-    
-    valueParse = await  Number.parseInt(valueParse)
+    let coint = valueParse.coint
+    valueParse = await  Number.parseInt(valueParse.parseNumber)
     const dataMin= valueParse + (valueParse * 0.17);
     const dataMax =valueParse+ (valueParse * 0.19);
 
     const response = {
         result: {
-            compraMinima: valueParse,
-            compraNormal: dataMin,
-            compraMaxima: dataMax
+            compraMinima: valueParse + " " +coint,
+            compraNormal: dataMin + " " +coint,
+            compraMaxima: dataMax + " " +coint
         }
     }
 
