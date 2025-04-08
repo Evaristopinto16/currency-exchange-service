@@ -33,6 +33,7 @@ currency-exchange-service/
 1. **Clone o repositório:**
 
    ```bash
+<<<<<<< HEAD
    git clone https://github.com/seuusuario/currency-exchange-service.git
    cd currency-exchange-service
 
@@ -77,3 +78,6 @@ Crie uma nova branch para sua feature:
 git checkout -b feature/NomeDaSuaFeature
 
  
+=======
+   git clonehttps://github.com/Evaristopinto16/currency-exchange-service
+>>>>>>> d238d329038d9afa7fd7dc775d5ef60cf9b82729
