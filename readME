@@ -67,7 +67,7 @@ Parâmetros:
 
 valor (query string): O valor em Rublo que você deseja converter.
 Exemplo de uso:
-GET http://localhost:3000/exchange/rublo-para-kwanza?valor=100
+GET http://localhost:3000/rublo-para-kwanza?valor=100
 
 Contribuição
 Contribuições são bem-vindas! Para colaborar com o projeto, siga os passos abaixo:
