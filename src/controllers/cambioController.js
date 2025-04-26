@@ -1,6 +1,6 @@
 import cambioService from "../service/cambioServices.js";
 
-  const cambioPost = async (request, reply)=>{
+  const cambioPost = async (request, reply) =>{
     const body = request.body;
     if(!body){
         reply.status(200).send({
@@ -31,4 +31,14 @@ import cambioService from "../service/cambioServices.js";
         )
     }
  }
- export default cambioPost
+
+ const getDayCambio = async ()=>{
+    let coin = Number(1000);
+    
+
+    console.log(coin)
+ }
+ export default {
+    cambioPost,
+    getDayCambio
+}

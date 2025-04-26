@@ -8,7 +8,7 @@ async function convesaoCambioUtilis(values) {
     return dataFinal
     
 }
-
+  
 async function parseToNumero(number){
     
     let parseNumber = ""
@@ -38,10 +38,13 @@ async function taxaInformal(values) {
     let valueParse = await parseToNumero(values)  
 
     let coint = valueParse.coint
-    valueParse = await  Number.parseInt(valueParse.parseNumber)
-    const dataMin= valueParse + (valueParse * 0.17);
-    const dataMax =valueParse+ (valueParse * 0.19);
 
+   
+    valueParse = await  Number.parseInt(valueParse.parseNumber)
+  let dataMin= valueParse + (valueParse * 0.17);
+    let dataMax =valueParse+ (valueParse * 0.19);
+    dataMin = Number(dataMin).toFixed(2)
+    dataMax = Number(dataMax).toFixed(2)
     const response = {
         result: {
             compraMinima: valueParse + " " +coint,

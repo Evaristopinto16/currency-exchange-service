@@ -1,4 +1,4 @@
-import get from "request-promise";
+import get from "axios";
 import * as cheerio from "cheerio";
 import taxa from "../utilis/conversaoCambioUtilis.js"
 import URL from "../config/apiurlConfig.js"
@@ -12,7 +12,7 @@ async function cambioService(rub, aoa, valor) {
     
      
 
-    const data = await get(`${url}/${rub}-${aoa}/${valor}`);
+    const {data} = await get(`${url}/${rub}-${aoa}/${valor}`);
      
   
 
